@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Kotawala - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Om Kotawala</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+            <p>I'm a passionate web developer creating beautiful and functional websites.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-title" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>Get to know more about me and my journey</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image" data-aos="fade-right">
+                <img src="portfolio_image.jpg" alt="Om Kotawala">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h3>Who am I?</h3>
+                <p>I'm a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I love creating beautiful and functional websites that provide great user experiences.</p>
+                <p>With a keen eye for design and a dedication to writing clean, efficient code, I strive to build websites that not only look great but also perform exceptionally well.</p>
+                <div class="about-buttons">
+                    <a href="IT_Om_Kotawala_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-title" data-aos="fade-up">
+            <h2>My Projects</h2>
+            <p>Check out some of my recent work</p>
+        </div>
+        <div class="filter-buttons" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="ai">AI/ML</button>
+            <button class="filter-btn" data-filter="app">App Development</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="web" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="image.png" alt="Automobile Spareparts Purchasing Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://jaautohub.com/" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Automobile Spareparts Purchasing Website</h3>
+                    <p>Smart inventory and sales solution for vehicle spare parts. Efficient stock management, order processing, and real-time updates.<br>
+                    <strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL<br>
+                    <strong>Role:</strong> UI Developer | <strong>Team Size:</strong> 5</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="SheKavach.jpg" alt="Women Safety (SHEKavach)">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/om-kotawala/SheKavach---Women-Safety-Analytics" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Women Safety (SHEKavach)</h3>
+                    <p>AI-powered real-time monitoring for women's security using computer vision and deep learning. Detects gender distribution, lone women in unsafe conditions, and SOS gestures.<br>
+                    <strong>Technologies:</strong> Python, Keras, Pytorch, TensorFlow, OpenCV, MediaPipe, CNN<br>
+                    <strong>Role:</strong> Model Trainer | <strong>Team Size:</strong> 6</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="healthmate.png" alt="HealthMate">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/om-kotawala/HealthMate-" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>HealthMate</h3>
+                    <p>AI-driven medical chatbot for instant health guidance, symptom analysis, and preliminary advice using NLP and ML.<br>
+                    <strong>Technologies:</strong> Python, Keras, Pytorch, Langchain, Huggingface (Mistral 7B), HTML, JavaScript, CSS, MongoDB<br>
+                    <strong>Role:</strong> Chatbot Developer with UI | <strong>Team Size:</strong> 6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-title" data-aos="fade-up">
+            <h2>My Skills</h2>
+            <p>Here are my technical skills and expertise</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-code"></i>
+                <h3>Programming Languages</h3>
+                <p>C, Java, Python</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-globe"></i>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, PHP, Node.js</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-cubes"></i>
+                <h3>Frameworks & Libraries</h3>
+                <p>Bootstrap, AngularJS, ReactJS, ExpressJS</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-database"></i>
+                <h3>Database Management</h3>
+                <p>MySQL, MongoDB</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="skills">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Key Achievements</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-trophy"></i>
+                <h3>Health Hack Finalist</h3>
+                <p>Finalist of Health Hack at VIT Bhopal</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-award"></i>
+                <h3>SIH 2024</h3>
+                <p>Top in zonal round for SIH 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <p>Let's discuss your project</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out to me for any questions or opportunities!</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>omkotawalaibpes@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+919898787134</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Om Nivas, 80 Feet Road, Anand, Gujarat, India</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" data-aos="fade-left">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <div class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/om-kotawala" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/om-kotawala-35b760216/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/OKotawala896?s=09 " target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/the_om_kotawala?igsh=MWpyaWx0Z2h4ZTRvag==" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Om Kotawala. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
